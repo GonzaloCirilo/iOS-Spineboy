@@ -14,6 +14,11 @@
 		EA22B428294027230034E2FA /* iOS_SpineboyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22B427294027230034E2FA /* iOS_SpineboyTests.swift */; };
 		EA22B432294027230034E2FA /* iOS_SpineboyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22B431294027230034E2FA /* iOS_SpineboyUITests.swift */; };
 		EA22B434294027230034E2FA /* iOS_SpineboyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22B433294027230034E2FA /* iOS_SpineboyUITestsLaunchTests.swift */; };
+		AA00000100000001SPINE0001 /* spineboy-pma.atlas in Resources */ = {isa = PBXBuildFile; fileRef = AA00000100000002SPINE0001 /* spineboy-pma.atlas */; };
+		AA00000100000008SPINE0001 /* spineboy-pma.png in Resources */ = {isa = PBXBuildFile; fileRef = AA00000100000009SPINE0001 /* spineboy-pma.png */; };
+		AA0000010000000ASPINE0001 /* spineboy-pro.skel in Resources */ = {isa = PBXBuildFile; fileRef = AA0000010000000BSPINE0001 /* spineboy-pro.skel */; };
+		AA00000100000003SPINE0001 /* Spine in Frameworks */ = {isa = PBXBuildFile; productRef = AA00000100000004SPINE0001 /* Spine */; };
+		AA00000100000005SPINE0001 /* SpineCppLite in Frameworks */ = {isa = PBXBuildFile; productRef = AA00000100000006SPINE0001 /* SpineCppLite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,10 @@
 		EA22B42D294027230034E2FA /* iOS-SpineboyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-SpineboyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA22B431294027230034E2FA /* iOS_SpineboyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_SpineboyUITests.swift; sourceTree = "<group>"; };
 		EA22B433294027230034E2FA /* iOS_SpineboyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_SpineboyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA2CA91E298241EB006E7DA5 /* iOS-Spineboy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-Spineboy-Bridging-Header.h"; sourceTree = "<group>"; };
+		AA00000100000002SPINE0001 /* spineboy-pma.atlas */ = {isa = PBXFileReference; lastKnownFileType = text; path = "spineboy-pma.atlas"; sourceTree = "<group>"; };
+		AA00000100000009SPINE0001 /* spineboy-pma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spineboy-pma.png"; sourceTree = "<group>"; };
+		AA0000010000000BSPINE0001 /* spineboy-pro.skel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "spineboy-pro.skel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA00000100000003SPINE0001 /* Spine in Frameworks */,
+				AA00000100000005SPINE0001 /* SpineCppLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,7 @@
 				EA22B426294027230034E2FA /* iOS-SpineboyTests */,
 				EA22B430294027230034E2FA /* iOS-SpineboyUITests */,
 				EA22B414294027220034E2FA /* Products */,
+				EA2CA50229823840006E7DA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +110,10 @@
 				EA22B418294027220034E2FA /* ContentView.swift */,
 				EA22B41A294027230034E2FA /* Assets.xcassets */,
 				EA22B41C294027230034E2FA /* Preview Content */,
+				EA2CA91E298241EB006E7DA5 /* iOS-Spineboy-Bridging-Header.h */,
+				AA00000100000002SPINE0001 /* spineboy-pma.atlas */,
+				AA00000100000009SPINE0001 /* spineboy-pma.png */,
+				AA0000010000000BSPINE0001 /* spineboy-pro.skel */,
 			);
 			path = "iOS-Spineboy";
 			sourceTree = "<group>";
@@ -127,6 +143,13 @@
 			path = "iOS-SpineboyUITests";
 			sourceTree = "<group>";
 		};
+		EA2CA50229823840006E7DA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +166,10 @@
 			dependencies = (
 			);
 			name = "iOS-Spineboy";
+			packageProductDependencies = (
+				AA00000100000004SPINE0001 /* Spine */,
+				AA00000100000006SPINE0001 /* SpineCppLite */,
+			);
 			productName = "iOS-Spineboy";
 			productReference = EA22B413294027220034E2FA /* iOS-Spineboy.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +242,9 @@
 				Base,
 			);
 			mainGroup = EA22B40A294027220034E2FA;
+			packageReferences = (
+				AA00000100000007SPINE0001 /* XCRemoteSwiftPackageReference "spine-runtimes" */,
+			);
 			productRefGroup = EA22B414294027220034E2FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +263,9 @@
 			files = (
 				EA22B41E294027230034E2FA /* Preview Assets.xcassets in Resources */,
 				EA22B41B294027230034E2FA /* Assets.xcassets in Resources */,
+				AA00000100000001SPINE0001 /* spineboy-pma.atlas in Resources */,
+				AA00000100000008SPINE0001 /* spineboy-pma.png in Resources */,
+				AA0000010000000ASPINE0001 /* spineboy-pro.skel in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,16 +456,18 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gcirilo.iOS-Spineboy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS-Spineboy/iOS-Spineboy-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,16 +487,18 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gcirilo.iOS-Spineboy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS-Spineboy/iOS-Spineboy-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -583,6 +620,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA00000100000007SPINE0001 /* XCRemoteSwiftPackageReference "spine-runtimes" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/esotericsoftware/spine-runtimes.git";
+			requirement = {
+				branch = "4.2";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA00000100000004SPINE0001 /* Spine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA00000100000007SPINE0001 /* XCRemoteSwiftPackageReference "spine-runtimes" */;
+			productName = Spine;
+		};
+		AA00000100000006SPINE0001 /* SpineCppLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA00000100000007SPINE0001 /* XCRemoteSwiftPackageReference "spine-runtimes" */;
+			productName = SpineCppLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA22B40B294027220034E2FA /* Project object */;
 }

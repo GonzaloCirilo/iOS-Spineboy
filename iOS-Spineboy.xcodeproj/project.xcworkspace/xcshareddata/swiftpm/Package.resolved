@@ -1,0 +1,15 @@
+{
+  "originHash" : "0865f1b6b9fdd368d860635031f9cb9fe95e91eb6462fd086fff35864f2dcfb6",
+  "pins" : [
+    {
+      "identity" : "spine-runtimes",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/esotericsoftware/spine-runtimes.git",
+      "state" : {
+        "branch" : "4.2",
+        "revision" : "4b72bb4a54d6b7956cc339e010e18f5e11f61a62"
+      }
+    }
+  ],
+  "version" : 3
+}
